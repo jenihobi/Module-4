@@ -1,47 +1,25 @@
-# 🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
-
-This Python program demonstrates how to sort a dictionary:
-- Alphabetically by keys
-- Alphabetically by values
-
----
+## Dictionary Operations in Python: Merging Two Dictionaries
 
 ## 🎯 Aim
-
-To write a Python program that sorts a dictionary's:
-- Keys in alphabetical order
-- Values in alphabetical order
-
----
+To write a Python program that merges **two dictionaries** and combines their key-value pairs.
 
 ## 🧠 Algorithm
+1. Define two dictionaries `dict1` and `dict2` with some key-value pairs.
+2. Define a function `merge()` that merges the two dictionaries using the `**` unpacking operator.
+   - The merged result will combine keys from both dictionaries. If a key exists in both, the value from `dict2` will overwrite that from `dict1`.
+3. Call the `merge()` function and print the merged dictionary.
 
-1. **Start the program.**
-2. **Define** a dictionary with key-value pairs.
-3. **Sort by Keys**:
-   - Use `sorted(dictionary.items())`
-   - Convert the result to a dictionary using `dict()`
-4. **Sort by Values**:
-   - Use `sorted(dictionary.items(), key=lambda item: item[1])`
-   - Convert the result to a dictionary using `dict()`
-5. **Display** the original and sorted dictionaries.
-6. **End the program.**
-
----
-
-## 🧪Program
+## 🧾 Program
 ```
-data=eval(input())
-sort=dict(sorted(data.items()))
-print("Keys and Values sorted in alphabetical order by the key")
-for key, value in sort.items():
-    print(f"({key}, {value}) ",end="")
+a=eval(input())
+b=eval(input())
+c=a.copy()
+c.update(b)
+print(c)
 ```
 
-## Sample Output
-<img width="1190" height="110" alt="image" src="https://github.com/user-attachments/assets/83f80e53-1b80-4d55-8a2d-7c7912d3534a" />
+## Output
+<img width="966" height="290" alt="image" src="https://github.com/user-attachments/assets/fcfb004a-98d5-4eb5-b339-eb4ad0690fbf" />
 
 ## Result
-Thus, the program has been successfully executed.
-
-
+Thus the program executed successfully.
